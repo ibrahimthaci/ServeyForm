@@ -1,0 +1,162 @@
+body::before{
+    
+    content: '';
+    position: fixed;
+    z-index:-1;
+    top: 0;
+    left: 0;
+    
+        background-image:linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ),
+        url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%; }
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-bottom: 0px;
+}
+.main{
+    width: 50%;
+    margin: 75px auto 0 auto ;
+    text-align: center; 
+}
+.header{
+   margin-bottom: 2rem;
+}
+#title{
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 15px;
+}
+#description{
+    font-style: italic;
+    font-size: 1.175rem;
+    margin: 0;
+}
+ form{
+    background-color: rgba(1, 13, 35, 0.8);
+    border-radius: 0.25rem;
+    padding-top: 25px;
+    
+}
+.label{
+    margin-bottom: 13px;
+    
+}
+label{
+    float: left; /*display:flex*/
+    padding: 20px;
+    margin-left: 30px;
+    margin-bottom: -8px;
+    font-size: 1.125rem;
+}
+input{     
+    width: 85%;
+    padding: 15px 10px;
+    border:transparent;
+    border-radius: 8px;
+    font-size: 1rem;
+    /* transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;  */
+}
+.labelradio{
+    font-size:1.125rem;
+    clear: both;
+    display: block;   
+    padding: 6px;
+    margin-bottom: 1px;
+}
+input[type=radio]{
+    height: 19px;
+    width: 30px;
+}
+#cars{
+    background-color: royalblue;
+    display: block;
+}
+
+/*
+.label-option{
+    /* display: block;
+    font-size: 1.125rem;
+    margin-top: 40px;
+    margin-left: -10px; 
+}*/
+select{
+    padding: 17px 10px;
+    width: 88%;
+    margin-left:45px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+#cars{
+    background-color:white;
+}
+p#option{
+    float: left;
+    font-size: 1.125rem;
+    margin-left: 50px;
+       
+}
+p#radio{  
+    font-size: 1.125rem;
+    float: left;
+    margin-left: 50px;
+    
+   }
+
+input[type=checkbox]{
+    width: 100px;
+    float: left;
+    height: 1rem;
+    width: 1.10rem;
+    margin-right: 10px;
+    border: none;
+}
+label.labelcheckbox{
+   
+    display: block;
+    clear: both;
+}
+
+.labeltxt{
+    box-sizing: border-box;
+}
+textarea{
+    box-sizing: border-box;
+    margin-right: 10px;
+    resize: vertical;
+    padding: 10px;
+    max-width: 85%;
+    font-size: 20px;
+    outline: none;
+    
+}
+/*:focus{outline: none;} in order to work "input:focus" we should do that or sent inside like the code below */
+
+input:focus{
+    outline: none !important; /*in order to work border on focus like the code up says*/
+    border-color: blue; /* if i want to add extra shadow*/
+    box-shadow: 0 0 10px blue; 
+    /*outline: 5px solid blue; nese dojm te shtojm ngjyre jashte borderit */ 
+    /*border:1px solid blue; //its making button move because border takes some of width and padding*/
+    
+}
+input#lastSubmit{
+    background-color:#37AF65;
+    margin-right: 10px;
+    border-radius: 0px;
+    margin-bottom: 80px;  
+}
+#lastlabel{
+    margin-bottom: 0px;
+}
+
+
+
+
+
+

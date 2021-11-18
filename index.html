@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servey Form</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </div>
+
+      <form id="survey-form">
+        <div class="label" style="box-sizing: border-box">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            autocomplete="off"
+            id="name"
+          />
+        </div>
+
+        <div class="label">
+          <label for="name">Email</label>
+          <input
+            type="text"
+            placeholder="Enter your email"
+            autocomplete="off"
+            id="name"
+          />
+        </div>
+
+        <div class="label">
+          <label for="name">Age (optional)</label>
+          <input
+            type="number"
+            placeholder="Enter your age"
+            autocomplete="off"
+            id="name"
+          />
+        </div>
+
+        <div class="label">
+          <p id="option">Which option best describes your current role?</p>
+          <p>
+            <select id="cars" name="cars">
+              <option selected value="volvo">Select current role</option>
+              <option value="volvo">Student</option>
+              <option value="saab">Full Time Job</option>
+              <option value="fiat">Full Time Learner</option>
+              <option value="audi">Prefer not to say</option>
+              <option value="audi">Other</option>
+            </select>
+          </p>
+        </div>
+
+        <div class="label">
+          <p id="radio">Would you recommend freeCodeCamp to a friend?</p>
+          <label class="labelradio">
+            <input
+              type="radio"
+              id="definitely"
+              name="user-recommend"
+              checked
+              value="male"
+            />
+            Definitely
+          </label>
+
+          <label class="labelradio">
+            <input
+              type="radio"
+              id="maybe"
+              name="user-recommend"
+              value="female"
+            />
+            Maybe
+          </label>
+
+          <label class="labelradio">
+            <input
+              type="radio"
+              id="not-sure"
+              name="user-recommend"
+              value="other"
+            />
+            Not Sure
+          </label>
+        </div>
+        <div style="clear: both"></div>
+
+        <div class="label">
+          <p id="option">What is your favorite feature of freeCodeCamp?</p>
+          <select id="cars" name="cars">
+            <option selected value="volvo">Select an option</option>
+            <option value="volvo">Challanges</option>
+            <option value="saab">Projects</option>
+            <option value="fiat">Community</option>
+            <option value="audi">Open Source</option>
+          </select>
+        </div>
+
+        <div class="label">
+          <p id="option">
+            What would you like to see improved? (Check all that apply)
+          </p>
+
+          <label class="labelcheckbox">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            Front-end Projects
+          </label>
+          <label class="labelcheckbox">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            Back-end Projects
+          </label>
+          <label class="labelcheckbox">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            Data Visualization
+          </label>
+          <label class="labelcheckbox">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            Challenges
+          </label>
+          <label class="labelcheckbox">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            Open Source Community
+          </label>
+          <label class="labelcheckbox">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            Gitter help rooms
+          </label>
+          <label class="labelcheckbox">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            Videos
+          </label>
+          <label class="labelcheckbox">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            City Meetups
+          </label>
+          <label class="labelcheckbox">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            Wiki
+          </label>
+          <label class="labelcheckbox">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            Forum
+          </label>
+          <label class="labelcheckbox">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            Additional Courses
+          </label>
+        </div>
+        <div style="clear: both"></div>
+        <br />
+        <div class="labeltxt">
+          <p id="option">Any comments or suggestions?</p>
+          <textarea
+            name="textarea"
+            placeholder="Enter your comment here..."
+            cols="60"
+            rows="5"
+          ></textarea>
+        </div>
+        <br />
+        <div class="label" id="lastlabel">
+          <input type="submit" id="lastSubmit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
